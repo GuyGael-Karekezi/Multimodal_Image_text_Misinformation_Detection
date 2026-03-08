@@ -35,6 +35,23 @@ def confidence_band(prob: float) -> str:
     return "High"
 
 
+def risk_message(prob: float) -> str:
+    if prob < 0.33:
+        return "Low risk. The image and text look mostly consistent."
+    if prob < 0.66:
+        return "Medium risk. Some signs are mixed, so this should be reviewed."
+    return "High risk. The model sees strong misinformation patterns."
+
+
+def confidence_message(prob: float) -> str:
+    conf = abs(prob - 0.5) * 2
+    if conf < 0.33:
+        return "Low confidence"
+    if conf < 0.66:
+        return "Moderate confidence"
+    return "High confidence"
+
+
 @st.cache_resource(show_spinner=False)
 def load_clip_model(device: str):
     """Load CLIP model with proper error handling"""
@@ -224,7 +241,7 @@ def predict_label(features, classifier):
 
 # Builds the user interface.
 st.title("Multimodal Misinformation Detector")
-st.caption("Upload an image and related text to estimate misinformation risk.")
+st.caption("Upload an image and related text to get a simple misinformation risk assessment.")
 show_debug = st.sidebar.checkbox("Show debug panel", value=False)
 
 if show_debug:
@@ -306,15 +323,17 @@ if run_clicked:
         st.error(f"Inference failed: {exc}")
         st.stop()
 
-    st.subheader("Prediction")
+    st.subheader("Result")
 
     # Shows prediction text with simple visual emphasis.
     if pred == MISINFO_LABEL:
-        st.markdown("### **Likely Misinformation**")
+        st.markdown("### **Potential Misinformation**")
+        st.caption("This means the model found patterns often seen in misleading posts.")
     else:
         st.markdown("### **Likely Consistent**")
+        st.caption("This means the image and text seem to fit together.")
 
-    st.subheader("Misinformation Probability")
+    st.subheader("Risk level")
     if prob is None:
         st.info("Probability is unavailable for this classifier.")
     else:
@@ -329,8 +348,9 @@ if run_clicked:
         else:
             st.progress(bounded_prob, text="Low risk")
 
-        st.caption(f"Estimated probability: {bounded_prob * 100:.1f}%")
-        st.caption(f"Confidence band: {band}")
+        st.caption(f"Estimated risk score: {bounded_prob * 100:.1f}%")
+        st.caption(f"Risk band: {band}")
+        st.info(risk_message(bounded_prob))
 
     if show_debug:
         with st.sidebar.expander("Last run", expanded=True):
@@ -341,29 +361,22 @@ if run_clicked:
             st.write(f"Probability: `{'N/A' if prob is None else f'{prob:.4f}'}`")
             st.write(f"Inference time: `{elapsed_ms:.2f} ms`")
 
-    st.subheader("Why this decision?")
+    st.subheader("Why this result?")
     st.write(
-        "The prediction comes from a classifier trained on multimodal examples, "
-        "using both visual and textual CLIP embeddings. The model learns patterns "
-        "from real misinformation data, where even semantically aligned image-text "
-        "pairs can indicate misinformation if the text lacks context or uses "
-        "sensational framing."
+        "The model checks whether the image and text support each other. "
+        "If they do not match well, risk goes up."
     )
 
     cos_sim_value = float(features[0, 0])
     if cos_sim_value >= 0.28:
-        st.caption(
-            "Image and text are conceptually related. This does not guarantee the claim is true."
-        )
+        st.caption("Image and text appear related.")
     else:
-        st.caption(
-            "Image and text look mismatched. This is a common false-connection signal."
-        )
+        st.caption("Image and text appear mismatched, which is a common warning sign.")
 
     if prob is not None:
-        st.caption(f"Model confidence: {abs(prob - 0.5) * 2:.1f} / 1.0")
+        st.caption(f"Model certainty: {confidence_message(prob)}")
 
-    st.subheader("Explainability")
+    st.subheader("What influenced this result?")
     try:
         prob_lin, logit, _, contrib, groups = linear_explain(features, clf)
         pos_class_label = get_positive_class_label(clf)
@@ -380,57 +393,80 @@ if run_clicked:
                 pos_push_label = "consistent"
                 neg_push_label = "misinformation"
 
-        c1, c2 = st.columns(2)
-        with c1:
-            st.metric("Logit (raw score)", f"{logit:.3f}")
-        with c2:
-            st.metric("Misinformation prob (from logit)", f"{misinfo_prob_lin:.3f}")
+        # Simple, human-readable explanation first.
+        relation_effect = groups["cos_sim"]
+        if relation_effect >= 0:
+            st.write("- Image-text relation pushed the result toward consistency.")
+        else:
+            st.write("- Image-text relation pushed the result toward misinformation risk.")
 
-        st.markdown("**Contribution to logit by feature group**")
-        st.write(
-            {
-                "bias": round(groups["bias"], 4),
-                "cos_sim": round(groups["cos_sim"], 4),
-                "abs_diff": round(groups["abs_diff"], 4),
-                "img_emb": round(groups["img_emb"], 4),
-                "txt_emb": round(groups["txt_emb"], 4),
-            }
-        )
+        if abs(groups["abs_diff"]) > abs(groups["cos_sim"]):
+            st.write("- Detailed embedding differences had a strong effect on this decision.")
+        else:
+            st.write("- Overall image-text alignment had the strongest effect on this decision.")
+
+        st.caption(f"Approximate model score for misinformation: {misinfo_prob_lin:.2f}")
 
         pos_idx, pos_vals, neg_idx, neg_vals = top_k_contribs(contrib, k=8)
-        st.markdown(f"**Top + dimensions (push toward {pos_push_label})**")
-        st.write(
-            [
-                {"feature_idx": int(i), "logit_contrib": float(v)}
-                for i, v in zip(pos_idx, pos_vals)
-            ]
-        )
+        with st.expander("Advanced details (technical)", expanded=False):
+            c1, c2 = st.columns(2)
+            with c1:
+                st.metric("Logit (raw score)", f"{logit:.3f}")
+            with c2:
+                st.metric("Misinformation prob (from logit)", f"{misinfo_prob_lin:.3f}")
 
-        st.markdown(f"**Top - dimensions (push toward {neg_push_label})**")
-        st.write(
-            [
-                {"feature_idx": int(i), "logit_contrib": float(v)}
-                for i, v in zip(neg_idx, neg_vals)
-            ]
-        )
+            st.markdown("**Contribution to logit by feature group**")
+            st.write(
+                {
+                    "bias": round(groups["bias"], 4),
+                    "cos_sim": round(groups["cos_sim"], 4),
+                    "abs_diff": round(groups["abs_diff"], 4),
+                    "img_emb": round(groups["img_emb"], 4),
+                    "txt_emb": round(groups["txt_emb"], 4),
+                }
+            )
+
+            st.markdown(f"**Top + dimensions (push toward {pos_push_label})**")
+            st.write(
+                [
+                    {"feature_idx": int(i), "logit_contrib": float(v)}
+                    for i, v in zip(pos_idx, pos_vals)
+                ]
+            )
+
+            st.markdown(f"**Top - dimensions (push toward {neg_push_label})**")
+            st.write(
+                [
+                    {"feature_idx": int(i), "logit_contrib": float(v)}
+                    for i, v in zip(neg_idx, neg_vals)
+                ]
+            )
     except Exception as exc:
         logger.info("Explainability disabled: %s", exc)
-        st.info("Detailed linear explainability is unavailable for this classifier layout.")
+        st.info("Detailed explanation is unavailable for this model setup.")
 
-    with st.expander("Word influence (approx, leave-one-word-out)"):
+    with st.expander("Important words in the text", expanded=False):
         try:
             impacts = word_influence_loo(
                 image, cleaned_text, clip_model, preprocess, clf, max_words=25
             )
             if not impacts:
-                st.write("Not enough words or probability output to compute influence.")
+                st.write("Not enough text to estimate word influence.")
             else:
                 st.caption(
-                    "Positive delta means that word increased misinformation probability."
+                    "Words with larger values had stronger influence on the result."
                 )
                 st.write(
                     [
-                        {"word": w, "delta_prob": round(float(d), 4)}
+                        {
+                            "word": w,
+                            "influence": round(abs(float(d)), 4),
+                            "direction": (
+                                "toward misinformation"
+                                if float(d) > 0
+                                else "toward consistency"
+                            ),
+                        }
                         for w, d in impacts
                     ]
                 )
