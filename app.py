@@ -406,10 +406,11 @@ if run_clicked:
 
         # Simple, human-readable explanation first.
         relation_effect = groups["cos_sim"]
-        if relation_effect >= 0:
-            st.write("- Image-text relation pushed the result toward consistency.")
-        else:
+        relation_direction = pos_push_label if relation_effect >= 0 else neg_push_label
+        if relation_direction == "misinformation":
             st.write("- Image-text relation pushed the result toward misinformation risk.")
+        else:
+            st.write("- Image-text relation pushed the result toward consistency.")
 
         if abs(groups["abs_diff"]) > abs(groups["cos_sim"]):
             st.write("- Detailed embedding differences had a strong effect on this decision.")
@@ -465,22 +466,35 @@ if run_clicked:
                 st.write("Not enough text to estimate word influence.")
             else:
                 st.caption(
-                    "Words with larger values had stronger influence on the result."
+                    "These are word-level effects only. The final prediction also depends on image features and overall image-text alignment."
                 )
-                st.write(
-                    [
-                        {
-                            "word": w,
-                            "influence": round(abs(float(d)), 4),
-                            "direction": (
-                                "toward misinformation"
-                                if float(d) > 0
-                                else "toward consistency"
-                            ),
-                        }
-                        for w, d in impacts
-                    ]
-                )
+                toward_misinfo = []
+                toward_consistency = []
+                for w, d in impacts:
+                    item = {
+                        "word": w,
+                        "influence": round(abs(float(d)), 4),
+                        "direction": (
+                            "toward misinformation"
+                            if float(d) > 0
+                            else "toward consistency"
+                        ),
+                    }
+                    if float(d) > 0:
+                        toward_misinfo.append(item)
+                    else:
+                        toward_consistency.append(item)
+
+                if toward_misinfo:
+                    st.markdown("**Words pushing toward misinformation**")
+                    st.write(toward_misinfo)
+                if toward_consistency:
+                    st.markdown("**Words pushing toward consistency**")
+                    st.write(toward_consistency)
+                if toward_misinfo and toward_consistency:
+                    st.caption(
+                        "Mixed directions are normal: some words can support consistency while other words or the image-text mismatch still drive the final result toward misinformation."
+                    )
         except Exception as exc:
             logger.info("Word influence failed: %s", exc)
             st.write("Could not compute word influence for this input.")
