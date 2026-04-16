@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Improving Fakeddit for Africa: Domain Adaptation for Multimodal Misinformation Detection"
+message: "If you use this repository, please cite the project and acknowledge the original team."
+type: software
+authors:
+  - family-names: "Ishimwe Karekezi"
+    given-names: "Guy Gael"
+    alias: "iguygael"
+  - family-names: "Chepkwony"
+    given-names: "Lynne"
+    alias: "lchepkwo"
+  - family-names: "Muhigira"
+    given-names: "Emile Lucky"
+    alias: "emuhigir"
+repository-code: "https://github.com/GuyGael-Karekezi/MBD_Misinformation"
+license: "AGPL-3.0-only"
+date-released: 2026-04-16
+abstract: "A lightweight CLIP-based multimodal misinformation detection project that adapts a Fakeddit-trained model for African-context examples and includes a Streamlit demo."

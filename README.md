@@ -360,12 +360,16 @@ This is acceptable for archival purposes, but for a cleaner final deployment we 
 
 ## License
 
-The code in this repository is released under the MIT License. See [LICENSE](LICENSE).
+The code in this repository is released under the GNU AGPLv3 License. See [LICENSE](LICENSE).
 
 Important note:
 
-- the MIT license applies to the project code and documentation written by the team
+- the AGPLv3 license applies to the project code and documentation written by the team
 - third-party datasets, images, and external materials may remain subject to their own original licenses or usage terms
 - anyone reusing the data assets should verify those source-specific conditions separately
+
+## Citation
+
+If this repository or its code is reused, the project should be credited to Technical Team 1. Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
 
