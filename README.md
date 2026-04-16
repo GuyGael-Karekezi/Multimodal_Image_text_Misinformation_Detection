@@ -82,17 +82,11 @@ MBD_Multimodal_Misinformation/
 |- data/
 |  |- README.md
 |  |- african_context/
-|  |  |- african_context_raw.csv
-|  |  |- african_context_core.csv
-|  |  \- african_context_core_optimized.csv
+|  |  \- african_context_raw.csv
 |  |- african_validation_images/
 |  |  \- img_*.jpg
 |  |- fakeddit/
 |  \- fakeddit_repo/
-|- docs/
-|  \- african_validation/
-|     |- COLLECTION_CHECKLIST.md
-|     \- template.csv
 |- demo/
 |  |- adapted_model.pkl
 |  |- model.pkl
@@ -103,7 +97,6 @@ MBD_Multimodal_Misinformation/
 |- src/
 |- 6981dc05ebba9ede62b43071/
 |- overleaf_abstract/
-|- overleaf_midterm/
 \- tmp_mbd_technical_group/
 ```
 
@@ -119,8 +112,6 @@ MBD_Multimodal_Misinformation/
 
 - [data/african_context/african_context_raw.csv](data/african_context/african_context_raw.csv): current working African-context dataset
 - [data/african_validation_images](data/african_validation_images): local image files used by the African dataset
-- [docs/african_validation/COLLECTION_CHECKLIST.md](docs/african_validation/COLLECTION_CHECKLIST.md): collection guidance
-- [docs/african_validation/template.csv](docs/african_validation/template.csv): data-entry template
 
 ### Writing materials
 
