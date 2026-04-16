@@ -92,12 +92,8 @@ MBD_Multimodal_Misinformation/
 |  |- model.pkl
 |  \- README.md
 |- outputs/
-|- artifacts/
 |- models/
 |- src/
-|- 6981dc05ebba9ede62b43071/
-|- overleaf_abstract/
-\- tmp_mbd_technical_group/
 ```
 
 ## Important files
@@ -112,12 +108,6 @@ MBD_Multimodal_Misinformation/
 
 - [data/african_context/african_context_raw.csv](data/african_context/african_context_raw.csv): current working African-context dataset
 - [data/african_validation_images](data/african_validation_images): local image files used by the African dataset
-
-### Writing materials
-
-- `tmp_mbd_technical_group/`: Overleaf-linked paper repository
-- `6981dc05ebba9ede62b43071/`: local paper workspace
-- `AuthorKit26/`: AAAI author kit
 
 ## Data description
 
