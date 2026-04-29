@@ -297,7 +297,7 @@ Current artifact roles:
 - `model.pkl` at the project root is the root app's current fallback model
 - `demo/adapted_model.pkl` is the final adapted model artifact produced by the notebook workflow
 
-If you want the root Streamlit app to use the final adapted model directly, copy or export `demo/adapted_model.pkl` to the project root as `adapted_model.pkl`, beside `app.py`.
+If we want the root Streamlit app to use the final adapted model directly, we can copy or export `demo/adapted_model.pkl` to the project root as `adapted_model.pkl`, beside `app.py`.
 
 ## Deployment notes
 
@@ -371,6 +371,7 @@ Important note:
 ## Citation
 
 If this repository or its code is reused, the project should be credited to Technical Team 1. Citation metadata is provided in [CITATION.cff](CITATION.cff).
+
 
 
 
