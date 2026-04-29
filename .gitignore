@@ -16,6 +16,9 @@ data/*
 !data/african_context/
 data/african_context/*
 !data/african_context/african_context_raw.csv
+!data/african_validation_images/
+data/african_validation_images/*
+!data/african_validation_images/README.md
 outputs/
 
 # Notebooks
