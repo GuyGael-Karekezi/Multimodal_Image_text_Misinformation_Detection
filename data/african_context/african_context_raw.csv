@@ -1,0 +1,179 @@
+﻿id,source_name,language,topic,claim_text,image_path,verdict_raw
+1,local_manual_collection,English,sports,This image shows a player announcing a boycott ahead of a major African final.,data/african_validation_images/img_001.jpg,misinformation
+2,local_manual_collection,English,community,This image shows emergency talks after a violent incident in the neighborhood.,data/african_validation_images/img_002.jpg,misinformation
+3,local_manual_collection,English,livelihood,A person paddles a small wooden boat across shallow water.,data/african_validation_images/img_003.jpg,likely_consistent
+4,local_manual_collection,English,coastal_life,This image shows survivors gathering on the shore after a boat carrying displaced families capsized offshore.,data/african_validation_images/img_004.jpg,misinformation
+5,local_manual_collection,English,public_order,This image shows riot police marching after a security sweep in response to violent clashes downtown.,data/african_validation_images/img_005.jpg,misinformation
+6,local_manual_collection,English,market,This image shows residents scrambling for food during a sudden supply crisis.,data/african_validation_images/img_006.jpg,misinformation
+7,local_manual_collection,English,public_life,This image shows people running from a confrontation after security forces fired tear gas on the road.,data/african_validation_images/img_007.jpg,misinformation
+8,local_manual_collection,English,sports,A football player in a bright green kit runs during a professional match.,data/african_validation_images/img_008.jpg,likely_consistent
+9,local_manual_collection,English,public_expression,A woman wears a face covering with a protest message.,data/african_validation_images/img_009.jpg,likely_consistent
+10,local_manual_collection,English,education,This image shows students sheltering after armed men forced a sudden school evacuation.,data/african_validation_images/img_010.jpg,misinformation
+11,local_manual_collection,English,sports,This image shows a runner escaping tear gas during a crackdown on city-center protesters.,data/african_validation_images/img_011.jpg,misinformation
+12,local_manual_collection,English,sports,This image shows cyclists racing through streets cleared after a violent security sweep.,data/african_validation_images/img_012.jpg,misinformation
+13,local_manual_collection,English,sports,This image shows a star player refusing to play after a federation dispute today.,data/african_validation_images/img_013.jpg,misinformation
+14,local_manual_collection,English,education,This image shows students waiting at a temporary displacement center after an attack on their campus.,data/african_validation_images/img_014.jpg,misinformation
+15,local_manual_collection,English,portrait,This image shows a political leader speaking after declaring a national emergency.,data/african_validation_images/img_015.jpg,misinformation
+16,local_manual_collection,English,culture,Women perform a traditional dance during a community event.,data/african_validation_images/img_016.jpg,likely_consistent
+17,local_manual_collection,English,training,Young adults sit at tables and work on laptops during a digital training session.,data/african_validation_images/img_017.jpg,likely_consistent
+18,local_manual_collection,English,indoor_scene,This image shows a house fire breaking out during a neighborhood blackout.,data/african_validation_images/img_018.jpg,misinformation
+19,local_manual_collection,English,portrait,A man and a woman pose together for a portrait photo.,data/african_validation_images/img_019.jpg,likely_consistent
+20,local_manual_collection,English,sports,A group in red sportswear poses on a basketball court.,data/african_validation_images/img_020.jpg,likely_consistent
+21,local_manual_collection,English,archival,An old black-and-white photo shows a small group standing outdoors.,data/african_validation_images/img_021.jpg,likely_consistent
+22,local_manual_collection,English,community,This image shows families sheltering after schools were closed due to insecurity.,data/african_validation_images/img_022.jpg,misinformation
+23,local_manual_collection,English,sports,People play a ball game on a reddish dirt field.,data/african_validation_images/img_023.jpg,likely_consistent
+24,local_manual_collection,English,community,Children and adults gather and dance at night in a community setting.,data/african_validation_images/img_024.jpg,likely_consistent
+25,local_manual_collection,English,community,This image shows a spontaneous gathering after authorities imposed emergency restrictions.,data/african_validation_images/img_025.jpg,misinformation
+26,local_manual_collection,English,health,A clinician examines a patient using eye equipment in a clinic.,data/african_validation_images/img_026.jpg,likely_consistent
+27,local_manual_collection,English,sports,This image shows a football match continuing beside an area cleared after armed clashes.,data/african_validation_images/img_027.jpg,misinformation
+28,local_manual_collection,English,community,This image shows residents meeting to discuss sudden shortages after a local disruption.,data/african_validation_images/img_028.jpg,misinformation
+29,local_manual_collection,English,water_access,This image shows residents queuing at a humanitarian water point after displacement from nearby fighting.,data/african_validation_images/img_029.jpg,misinformation
+30,local_manual_collection,English,public_event,Children visit a small public display or activity booth outdoors.,data/african_validation_images/img_030.jpg,likely_consistent
+31,local_manual_collection,English,ceremony,A woman in a white dress kneels outdoors during a ceremonial moment.,data/african_validation_images/img_031.jpg,likely_consistent
+32,local_manual_collection,English,sports,This image shows a match held despite tensions after a local security alert.,data/african_validation_images/img_032.jpg,misinformation
+33,local_manual_collection,English,crafts,This image shows armed police breaking up an anti-government protest in a city square.,data/african_validation_images/img_033.jpg,misinformation
+34,local_manual_collection,English,water_access,Women carry water containers in a rural community.,data/african_validation_images/img_034.jpg,likely_consistent
+35,local_manual_collection,English,agriculture,This image shows farmland burned after fighting spread through rural communities this week.,data/african_validation_images/img_035.jpg,misinformation
+36,local_manual_collection,English,street_food,This image shows a resident taking shelter after unrest interrupted movement in the city.,data/african_validation_images/img_036.jpg,misinformation
+37,local_manual_collection,English,portrait,An elderly woman smiles and gives a thumbs up.,data/african_validation_images/img_037.jpg,likely_consistent
+38,local_manual_collection,English,public_life,This image shows a child leaving home during a neighborhood evacuation after gunfire.,data/african_validation_images/img_038.jpg,misinformation
+39,local_manual_collection,English,performance,This image shows a gathering held after local authorities suspended public events.,data/african_validation_images/img_039.jpg,misinformation
+40,local_manual_collection,English,health,A laboratory worker uses equipment in a medical setting.,data/african_validation_images/img_040.jpg,likely_consistent
+41,local_manual_collection,English,sports,A man poses in a fighting stance outdoors.,data/african_validation_images/img_041.jpg,likely_consistent
+42,local_manual_collection,English,portrait,This image shows a campaign spokesperson arriving after a major political dispute.,data/african_validation_images/img_042.jpg,misinformation
+43,local_manual_collection,English,water_access,This image shows refugees lined up at a humanitarian distribution point after being displaced by conflict.,data/african_validation_images/img_043.jpg,misinformation
+44,local_manual_collection,English,crafts,A young man works with beads or handmade items at a table.,data/african_validation_images/img_044.jpg,likely_consistent
+45,local_manual_collection,English,transport,This image shows travelers stranded after rail services were halted by an emergency.,data/african_validation_images/img_045.jpg,misinformation
+46,local_manual_collection,English,public_life,This image shows people moving through the street during an emergency evacuation after gunfire nearby.,data/african_validation_images/img_046.jpg,misinformation
+47,local_manual_collection,English,health,This image shows a battlefield hospital treating bombing casualties near an active front line.,data/african_validation_images/img_047.jpg,misinformation
+48,local_manual_collection,English,food_prep,This image shows residents relying on a relief kitchen after market disruptions.,data/african_validation_images/img_048.jpg,misinformation
+49,local_manual_collection,English,crafts,A potter shapes clay vessels in a workshop.,data/african_validation_images/img_049.jpg,likely_consistent
+50,local_manual_collection,English,water_access,Adults and children fill yellow containers with water.,data/african_validation_images/img_050.jpg,likely_consistent
+51,local_manual_collection,English,education,A presenter speaks in front of a projected slide during a workshop.,data/african_validation_images/img_051.jpg,likely_consistent
+52,local_manual_collection,English,health,Medical staff perform a scan on a patient in a hospital.,data/african_validation_images/img_052.jpg,likely_consistent
+53,local_manual_collection,English,media,A man records speech in a studio with a microphone.,data/african_validation_images/img_053.jpg,likely_consistent
+54,local_manual_collection,English,beauty,A woman has her hair styled in a salon setting.,data/african_validation_images/img_054.jpg,likely_consistent
+55,local_manual_collection,English,culture,This image shows residents gathering after unrest despite a security warning.,data/african_validation_images/img_055.jpg,misinformation
+56,local_manual_collection,English,rural_life,People move through a dry settlement carrying goods.,data/african_validation_images/img_056.jpg,likely_consistent
+57,local_manual_collection,English,office,Women work together at an office desk.,data/african_validation_images/img_057.jpg,likely_consistent
+58,local_manual_collection,English,education,Students sit in a library or learning space with books.,data/african_validation_images/img_058.jpg,likely_consistent
+59,local_manual_collection,English,education,Participants attend a training session in a classroom.,data/african_validation_images/img_059.jpg,likely_consistent
+60,local_manual_collection,English,public_place,A woman stands near a caged lion in a zoo or park.,data/african_validation_images/img_060.jpg,likely_consistent
+61,local_manual_collection,English,community,This image shows displaced families waiting for emergency aid after violence.,data/african_validation_images/img_061.jpg,misinformation
+62,local_manual_collection,English,health,This image shows officials documenting mass casualties after a bombing.,data/african_validation_images/img_062.jpg,misinformation
+63,local_manual_collection,English,health,This image shows a quarantine block after an infectious disease outbreak.,data/african_validation_images/img_063.jpg,misinformation
+64,local_manual_collection,English,office,A worker sits at a desk inside a bright office or reception room.,data/african_validation_images/img_064.jpg,likely_consistent
+65,local_manual_collection,English,rural_life,Clothes hang on a line beside a home in a rural compound.,data/african_validation_images/img_065.jpg,likely_consistent
+66,local_manual_collection,English,market,People move through an open-air market with small roadside stalls.,data/african_validation_images/img_066.jpg,likely_consistent
+67,local_manual_collection,English,livelihood,People sort large sacks of goods in a busy outdoor work area.,data/african_validation_images/img_067.jpg,likely_consistent
+68,local_manual_collection,English,water_access,This image shows families evacuating with emergency supplies after militia attacks.,data/african_validation_images/img_068.jpg,misinformation
+69,local_manual_collection,English,education,This image shows officials holding an emergency briefing after a school attack.,data/african_validation_images/img_069.jpg,misinformation
+70,local_manual_collection,English,market,This image shows shoppers rushing to buy scarce supplies during a national shortage.,data/african_validation_images/img_070.jpg,misinformation
+71,local_manual_collection,English,education,Children sit at wooden desks during a classroom lesson.,data/african_validation_images/img_071.jpg,likely_consistent
+72,local_manual_collection,English,community,This image shows displaced families gathering for registration at a camp.,data/african_validation_images/img_072.jpg,misinformation
+73,local_manual_collection,English,public_order,This image shows security forces chasing protesters after election violence.,data/african_validation_images/img_073.jpg,misinformation
+74,local_manual_collection,English,market,This image shows traders returning after a deadly fire destroyed the market.,data/african_validation_images/img_074.jpg,misinformation
+75,local_manual_collection,English,wildlife,"A queen of the savannah finding her throne above the plains, a reminder of Africaâ€™s wild adaptability and grace.",data/african_validation_images/img_075.jpg,misinformation
+76,local_manual_collection,English,office,High-rise office towers in Nairobi struggling with internet outages,data/african_validation_images/img_076.jpg,misinformation
+77,local_manual_collection,English,tourism,Luxury safari resorts booming with international tourists,data/african_validation_images/img_077.jpg,misinformation
+78,local_manual_collection,English,office,Tech startups in Lagos racing to launch new fintech apps,data/african_validation_images/img_078.jpg,misinformation
+79,local_manual_collection,English,health,"Vaccination day brings hope and protection, as healthcare workers ensure communities stay safe",data/african_validation_images/img_079.jpg,likely_consistent
+80,local_manual_collection,English,culture,Fashion week in Dakar showcasing avant-garde runway designs,data/african_validation_images/img_080.jpg,misinformation
+81,local_manual_collection,English,health,"Patients wait patiently in the clinic corridor, each carrying their own story of resilience and hope for healing",data/african_validation_images/img_081.jpg,likely_consistent
+82,local_manual_collection,English,health,"Tygerberg Hospital stands as a vital healthcare hub in Cape Town, serving diverse communities with multilingual access to emergency care.",data/african_validation_images/img_082.jpg,likely_consistent
+83,local_manual_collection,English,livelihood,Mining companies in Zambia expanding copper exports to Europe,data/african_validation_images/img_083.jpg,misinformation
+84,local_manual_collection,English,water_access,"A woman from Isari Village, Tanzania fills a pail with dirty water, as her community has no access to clean water.",data/african_validation_images/img_084.jpg,likely_consistent
+85,local_manual_collection,English,water_access,"Children from Manga Village, Zambia celebrate the arrival of clean, fresh water from the new tap installed by Innovation",data/african_validation_images/img_085.jpg,likely_consistent
+86,local_manual_collection,English,education,"Students listen to a teacher at the school in Chiseka, Malawi. Chiseka vividly shows one of the biggest challenges Africa faces today: Saving a generation that is growing up with hardly any education",data/african_validation_images/img_086.jpg,likely_consistent
+87,local_manual_collection,English,education,"Throughout sub-Saharan Africa, upwards of five million children are left without traditional education due to poverty, unrest and civil turmoil.",data/african_validation_images/img_087.jpg,likely_consistent
+88,local_manual_collection,English,education,"To catch up with the worldâ€™s technological advances, Africaâ€™s education system needs to promote science and technology studies and, specifically, hands-on training to spur innovation,",data/african_validation_images/img_088.jpg,likely_consistent
+89,local_manual_collection,English,transport,Railways advances transport in Burundi,data/african_validation_images/img_089.jpg,misinformation
+90,local_manual_collection,English,culture,"Traditional ceremony unfolds in vivid colors, where greetings and rituals echo against the backdrop of mountains, celebrating heritage and unity.",data/african_validation_images/img_090.jpg,likely_consistent
+91,local_manual_collection,English,public_order,"Soldiers from the Democratic Republic of Congo patrol in Bangui, Central African Republic as part of the Multinational Force of Central African States",data/african_validation_images/img_091.jpg,likely_consistent
+92,local_manual_collection,English,public_order,"Government troops and tanks are seen in the eastern Congolese town of Rumangabo, July 26, 2012",data/african_validation_images/img_092.jpg,likely_consistent
+93,local_manual_collection,English,sports,"Senegalese fans erupt in joy as their team advances, painting the stadium in green, yellow, and red pride",data/african_validation_images/img_093.jpg,likely_consistent
+94,local_manual_collection,English,public_life,Dodge traffic on South African roads during load shedding,data/african_validation_images/img_094.jpg,likely_consistent
+95,local_manual_collection,English,tourism,Tourism board in Zanzibar launches new beach resort campaign,data/african_validation_images/img_095.jpg,misinformation
+96,local_manual_collection,English,health,"Mihag Gedi Farah, a malnourished seven-month-old child weighing only 7.5 pound (3.4kg), is held by his mother in a field hospital of the International Rescue Committee",data/african_validation_images/img_096.jpg,likely_consistent
+97,local_manual_collection,English,health,"A health worker administers a COVID-19 vaccine to a woman, in Malawi",data/african_validation_images/img_097.jpg,likely_consistent
+98,local_manual_collection,English,wildlife,Two cheetahs curiously interact with a safari vehicle as tourists capture the rare encounter.,data/african_validation_images/img_099.jpg,likely_consistent
+99,local_manual_collection,English,public_place,"A quiet desert with no people, no buildings, and absolutely nothing happening at all.",data/african_validation_images/img_100.jpg,misinformation
+100,local_manual_collection,English,agriculture,A veterinarian performs a rectal examination on a cow as part of routine livestock care,data/african_validation_images/img_101.jpg,likely_consistent
+101,local_manual_collection,English,market,Shoppers browse through piles of second-hand clothes at a bustling outdoor market,data/african_validation_images/img_102.jpg,likely_consistent
+102,local_manual_collection,English,public_event,A thriving Silicon Valley tech expo where robots sell cryptocurrency futures under neon billboards,data/african_validation_images/img_103.jpg,misinformation
+103,local_manual_collection,English,livelihood,Fishermen in Uganda skillfully haul in their nets from a small wooden boat on the lake,data/african_validation_images/img_104.jpg,likely_consistent
+104,local_manual_collection,English,tourism,"A luxury cruise ship glides across crystal-clear ocean waters, serving gourmet meals to passengers",data/african_validation_images/img_105.jpg,misinformation
+105,local_manual_collection,English,education,"Students in Libya gather in uniform for a structured school assembly, reflecting discipline and community in education",data/african_validation_images/img_106.jpg,likely_consistent
+106,local_manual_collection,English,public_life,Migrants who are repatriated from Libya to Niger arrive in the city,data/african_validation_images/img_107.jpg,likely_consistent
+107,local_manual_collection,English,community,A children’s puppet show in a village square where clowns debate the price of bananas,data/african_validation_images/img_108.jpg,likely_consistent
+108,local_manual_collection,English,public_event,"Delegates gather in the Nelson Mandela Plenary Hall for an African Union summit, symbolizing continental unity and leadership",data/african_validation_images/img_109.jpg,likely_consistent
+109,local_manual_collection,English,sports,Ronaldo meets Messi ahead of their crash for UCL final 2029,data/african_validation_images/img_110.jpg,misinformation
+110,local_manual_collection,English,transport,A luxury coach service in Gabon where each student enjoys spacious seating and air?conditioning on their way to school,data/african_validation_images/img_111.jpg,misinformation
+111,local_manual_collection,English,public_expression,"Citizens in Gabon wave national flags during a public gathering, expressing unity and pride in their country",data/african_validation_images/img_112.jpg,likely_consistent
+112,local_manual_collection,English,education,"Mauritania’s classrooms are equipped with cutting?edge digital tablets, interactive smartboards, and air?conditioned lecture halls where students enjoy personalized learning experience",data/african_validation_images/img_113.jpg,misinformation
+113,local_manual_collection,English,public_order,"Mauritanian soldiers enter and clear a building in Atar, Mauritania during Exercise Flintlock 2019",data/african_validation_images/img_114.jpg,likely_consistent
+114,local_manual_collection,English,education,"In Gambia, education press briefing, officials announce the rollout of holographic teachers and AI?powered classrooms.",data/african_validation_images/img_115.jpg,misinformation
+115,local_manual_collection,English,livelihood,Somali men wait beside their trucks for American and British air crews to unload C-130s (turbo-prop transport aircraft) filled with food and other aid,data/african_validation_images/img_116.jpg,likely_consistent
+116,local_manual_collection,English,public_life,"Somalis are seen leaving the Somali capital Mogadishu, due to hunger, for a refugee camp",data/african_validation_images/img_117.jpg,likely_consistent
+117,local_manual_collection,English,transport,"Somalia’s transport system features futuristic high?speed bullet trains gliding across the desert, offering luxury cabins and seamless connectivity between cities",data/african_validation_images/img_118.jpg,misinformation
+118,local_manual_collection,English,livelihood,A worker in the Shinkolobwe mine the source of the uranium for the bombs dropped on Hiroshima and Nagasaki.,data/african_validation_images/img_119.jpg,likely_consistent
+119,local_manual_collection,English,transport,"In Burundi transport context, farmers move bananas using fleets of refrigerated trucks equipped with GPS tracking and automated loading systems. ",data/african_validation_images/img_120.jpg,misinformation
+120,local_manual_collection,English,sports,A stadium was inaugurated in Angola capital,data/african_validation_images/img_121.jpg,misinformation
+121,local_manual_collection,English,public_life,Mozambique population to double in 2055,data/african_validation_images/img_122.jpg,likely_consistent
+122,local_manual_collection,English,public_expression,Tunisia protests against the wage bill,data/african_validation_images/img_123.jpg,likely_consistent
+123,aljazeera,English,public_order,"Kenyan police beat a protester during demonstrations against Finance Bill tax hikes in downtown Nairobi on June 25, 2024.",data/african_validation_images/img_124.jpg,likely_consistent
+124,medium,English,public_order,"Image depicting current situation on 12 June 2025 during protests in Nairobi’s CBD, led mainly by young Kenyans demanding justice following the controversial death of Albert Ojwang while in police custody.",data/african_validation_images/img_125.jpg,misinformation
+125,aljazeera,English,public_order,A protester runs from a riot police officer to avoid being struck by a baton during demonstrations in Nairobi.,data/african_validation_images/img_126.jpg,likely_consistent
+126,aljazeera,English,public_expression,"Protesters storm parliament in Kampala, Uganda, on 15 January 2026 after disputed election results.",data/african_validation_images/img_127.jpg,misinformation
+127,aljazeera,English,public_expression,"Protesters carry the body of a man shot during protests over Finance Bill tax hikes in Nairobi on June 25, 2024.",data/african_validation_images/img_128.jpg,likely_consistent
+128,aljazeera,English,public_order,Photo shows Mozambicans fleeing violence as security forces fire on election protesters in Maputo in October 2024.,data/african_validation_images/img_129.jpg,misinformation
+129,aljazeera,English,public_order,Protesters scatter as Kenya police spray water cannon at them during the Finance Bill protest in Nairobi.,data/african_validation_images/img_130.jpg,likely_consistent
+130,aljazeera,English,public_order,"A Nigerian soldier fires tear gas at EndBadGovernance protesters storming the National Assembly in Abuja on August 1, 2024.",data/african_validation_images/img_131.jpg,misinformation
+131,aljazeera,English,public_order,"Demonstrators scatter as Kenyan police deploy water cannon during protests in downtown Nairobi on June 25, 2024.",data/african_validation_images/img_132.jpg,likely_consistent
+132,aljazeera,English,public_order,Ugandan opposition supporter arrested by plainclothes security agents in Kampala ahead of the 2026 presidential election.,data/african_validation_images/img_133.jpg,misinformation
+133,aljazeera,English,public_order,"Protesters carry a man shot by police during Finance Bill demonstrations in Nairobi, June 25, 2024.",data/african_validation_images/img_134.jpg,likely_consistent
+134,aljazeera,English,public_order,Senegalese youth run from tear gas in Dakar during Sonko protest marches in March 2025.,data/african_validation_images/img_135.jpg,misinformation
+135,aljazeera,English,public_order,"A police officer fires tear gas during anti-government protests in Nairobi, Kenya on August 8, 2024.",data/african_validation_images/img_136.jpg,likely_consistent
+136,aljazeera,English,public_order,Rwandan police take position as crowds protest against President Kagame's fourth term bid in Kigali in 2025.,data/african_validation_images/img_137.jpg,misinformation
+137,aljazeera,English,public_order,"Pro-reform protesters run away from tear gas fired by police in Nairobi on August 8, 2024.",data/african_validation_images/img_138.jpg,likely_consistent
+138,aljazeera,English,public_order,Protesters scatter in Dar es Salaam as police spray water cannon at demonstrators on 29 October 2025.,data/african_validation_images/img_139.jpg,misinformation
+139,aljazeera,English,public_order,"Police officers take position amid clashes with protesters in Nairobi, Kenya on August 8, 2024.-",data/african_validation_images/img_140.jpg,likely_consistent
+140,medium,English,public_expression,Kenyan youths sneak into Tanzania to support anti-Samia protesters in October 2025.,data/african_validation_images/img_141.jpg,misinformation
+141,aljazeera,English,public_expression,"Anti-government protesters demonstrate in Nairobi, Kenya, as fresh protests resume after weeks of demonstrations.",data/african_validation_images/img_142.jpg,likely_consistent
+142,aljazeera,English,public_order,"A protester is arrested by police during anti-government demonstrations in Nairobi on August 8, 2024.",data/african_validation_images/img_143.jpg,likely_consistent
+143,medium,English,public_order,Photo shows Uganda People’s Defence Forces (UPDF) soldiers repatriating bodies of fallen comrades killed in Congo in 2025.,data/african_validation_images/img_144.jpg,misinformation
+144,aljazeera,English,public_order,"A demonstrator is chased by police during protests in Nairobi, Kenya on August 8, 2024.",data/african_validation_images/img_145.jpg,likely_consistent
+145,daily_maverick,English,public_event,International Relations Minister Ronald Lamola led a successful G20 presidency in South Africa in 2025.,data/african_validation_images/img_146.jpg,likely_consistent
+146,pesacheck,English,community,"Ethiopian government airstrike destroys TPLF weapons storage site in Tembien, Tigray in January 2026.",data/african_validation_images/img_147.jpg,misinformation
+147,pesacheck,English,community,"Photo shows homes and cattle burned in Selale Town, Oromia region, Ethiopia by unknown attackers in February 2026.",data/african_validation_images/img_148.jpg,misinformation
+148,daily_maverick,English,community,People near the Komati power station in Mpumalanga search for coal on 8 November 2021.,data/african_validation_images/img_149.jpg,likely_consistent
+149,pesacheck,English,community,Photo shows Bobi Wine riding in a matatu with Ugandans while the military hunts him after the January 2026 election.,data/african_validation_images/img_150.jpg,misinformation
+150,aljazeera,English,sports,Senegal's forward Sadio Mane holds the AFCON trophy after defeating Morocco in the 2026 final.,data/african_validation_images/img_151.jpg,likely_consistent
+151,pesacheck,English,public_order,Photo shows Bobi Wine greeting boda boda riders in Kampala in February 2026 as he hides from security forces.,data/african_validation_images/img_152.jpg,misinformation
+152,aljazeera,English,community,Onlookers inspect damage to the bridge crossing the Ga-Selati River following heavy Limpopo rains.,data/african_validation_images/img_153.jpg,likely_consistent
+153,pesacheck,English,community,Gathoni Wamuchomba was spotted with Edwin Sifuna and Babu Owino at a secret ODM meeting in February 2026.,data/african_validation_images/img_154.jpg,misinformation
+154,associated_press,English,community,"People queue during mass Easter weddings for 3,000 people, some polygamous, at the International Pentecost Holiness Church in Heidelberg, east of Johannesburg, South Africa, Sunday, April 20, 2025",data/african_validation_images/img_155.jpg,likely_consistent
+155,aljazeera,English,community,"People displaced following Rapid Support Forces (RSF) attacks on Zamzam displacement camp, shelter in the town of Tawila, close to el-Fasher in North Darfur, Sudan, on April 15, 2025",data/african_validation_images/img_156.jpg,likely_consistent
+156,static_euronews_com,English,community,"People displaced by the fighting with M23 rebels make their way to the center of Goma, Democratic Republic of the Congo in January 26, 2025.",data/african_validation_images/img_157.jpg,likely_consistent
+157,pesacheck,English,public_order,Photo shows soldiers captured by Fano militia fighters in the Amhara region of Ethiopia in December 2025.,data/african_validation_images/img_158.jpg,misinformation
+158,associated_press,English,community,"M23 rebels release captured Romanian mercenaries, who were fighting alongside Democratic Republic of Congo army (FRDC), at Gisenyi border point in Congo, Wednesday, Jan. 29, 2025, after the M23 rebels advanced into eastern Congo’s capital Goma",data/african_validation_images/img_159.jpg,likely_consistent
+159,medium,English,public_order,"Standard newspaper front page, 13 June 2025: The Standard has uncovered a well-organised syndicate in the police headed by DIG Eliud Langat. The syndicate comprises of 12 Nairobi police base commanders that channel over Shs 100 million monthly, to Mr Langat",data/african_validation_images/img_160.jpg,misinformation
+160,associated_press,English,community,"Fanuse Adete, 38, holds up a candle she uses to light her home in Menabichu district, Addis Ababa, September 6, 2025.",data/african_validation_images/img_161.jpg,likely_consistent
+161,medium,English,community,"Daily Nation front page, 6 November 2025: 'Ruto's Doha Handshake' — secret meeting of Ruto, Matiang'i and Uhuru in Qatar.",data/african_validation_images/img_162.jpg,misinformation
+162,associated_press,English,community,"Election volunteers count ballots in Blantyre, Malawi on September 16, 2025.",data/african_validation_images/img_163.jpg,likely_consistent
+163,medium,English,community,"The Standard front page, 11 August 2025: 'Gachagua's tribal crusade in US to end in arrest back home.'",data/african_validation_images/img_164.jpg,misinformation
+164,associated_press,English,health,"Patients sit outside the malnutrition ward of Bunj Hospital in Maban, South Sudan on August 19, 2025.",data/african_validation_images/img_165.jpg,likely_consistent
+165,medium,English,wildlife,"Altered Citizen Digital screengrab: 'I was very aware of Gachagua's KSh 3.7 billion Deal at KEMSA', says ex-Health CS Nakhumicha.",data/african_validation_images/img_166.jpg,misinformation
+166,associated_press,English,community,Refugees wait for food distribution at the Tine transit camp in Chad’s Wadi Fara province,data/african_validation_images/img_167.jpg,likely_consistent
+167,pesacheck,English,sports,"Edited photo shows Talanta Stadium in Nairobi flooded with rescue boats from Nigeria, Egypt, Morocco and South Africa.",data/african_validation_images/img_168.jpg,misinformation
+168,associated_press,English,transport,"A fish fantasy coffin crafted by Eric Kpakpo Adotey is displayed by the roadside in La, Accra, Ghana",data/african_validation_images/img_169.jpg,likely_consistent
+169,medium,English,health,Photo shows Uganda's NUP member Fred Nyanzi Ssentamu in critical condition at Bombo Hospital in 2025.,data/african_validation_images/img_170.jpg,misinformation
+170,associated_press,English,public_order,"M23 rebels patrol the streets of Goma, Democratic Republic of the Congo",data/african_validation_images/img_171.jpg,likely_consistent
+171,medium,English,community,"Photo shows a packed UDA political rally in Mbeere North, Embu County — 'Mbeere North is Udinated!'",data/african_validation_images/img_172.jpg,misinformation
+172,associated_press,English,community,"A balloon bearing President Alassane Ouattara's image floats above supporters at a campaign rally in Abidjan on October 22, 2025.",data/african_validation_images/img_173.jpg,likely_consistent
+173,associated_press,English,sports,"People lineup to pay their respects to former Kenya prime minister Raila Odinga at Nyayo National Stadium in Nairobi Kenya, on October 18, 2025.",data/african_validation_images/img_174.jpg,likely_consistent
+174,associated_press,English,public_order,"A Kenyan police officer whips a protester during a demonstration in downtown Nairobi, Kenya on June 25, 2025.",data/african_validation_images/img_175.jpg,likely_consistent
+175,media_premiumtimesng_com,English,health,"Lenacapavir, a new HIV prevention injection, is set to come to Nigeria after successful clinical trials.",data/african_validation_images/img_176.jpg,likely_consistent
+176,daily_maverick,English,water_access,Callan Lotter won three titles at the South African Open Water Championships in March 2026.,data/african_validation_images/img_177.jpg,likely_consistent
+177,daily_maverick,English,market,"A sign advertising Bitcoin as an accepted form of payment at local markets in Tofo, Mozambique.",data/african_validation_images/img_178.jpg,likely_consistent
+178,aljazeera,English,community,"Ghana's John Mahama wins the December 2024 presidential election, returning the NDC to power.",data/african_validation_images/img_179.jpg,likely_consistent

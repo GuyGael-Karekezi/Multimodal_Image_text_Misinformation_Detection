@@ -11,6 +11,11 @@ overleaf_abstract/
 
 # Data
 data/
+!data/
+data/*
+!data/african_context/
+data/african_context/*
+!data/african_context/african_context_raw.csv
 outputs/
 
 # Notebooks
