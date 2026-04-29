@@ -1,4 +1,4 @@
-﻿# Improving Fakeddit for Africa: Domain Adaptation for Multimodal Misinformation Detection
+# Improving Fakeddit for Africa: Domain Adaptation for Multimodal Misinformation Detection
 
 This repository contains the final technical-group project for multimodal misinformation detection using image-text consistency features from CLIP and a lightweight logistic regression classifier. The project began with a Fakeddit-trained baseline and then adapted that same model using African-context data so that it performs better on African examples while remaining strong on the original benchmark.
 
@@ -8,9 +8,9 @@ Group name: `Technical Team 1`
 
 Team members:
 
-- Ishimwe Karekezi Guy Gael — Andrew ID: `iguygael`
-- Lynne Chepkwony — Andrew ID: `lchepkwo`
-- Emile Lucky Muhigira — Andrew ID: `emuhigir`
+- Ishimwe Karekezi Guy Gael � Andrew ID: `iguygael`
+- Lynne Chepkwony � Andrew ID: `lchepkwo`
+- Emile Lucky Muhigira � Andrew ID: `emuhigir`
 
 The repository includes:
 
@@ -190,7 +190,7 @@ The downstream classifier is a `LogisticRegression` model. This was chosen becau
 - lightweight
 - easy to retrain
 - easier to interpret than a heavier end-to-end architecture
-- strong enough in the projectâ€™s benchmark experiments
+- strong enough in the project's benchmark experiments
 
 ## Adaptation workflow
 
@@ -292,12 +292,12 @@ Outputs:
 
 `app.py` prefers an `adapted_model.pkl` located beside the app if one exists. Otherwise, it falls back to `model.pkl`.
 
-At the moment:
+Current artifact roles:
 
-- the baseline model exists at the project root as `model.pkl`
-- an exported adapted model also exists under `demo/adapted_model.pkl`
+- `model.pkl` at the project root is the root app's current fallback model
+- `demo/adapted_model.pkl` is the final adapted model artifact produced by the notebook workflow
 
-If you want the root app to use the adapted model directly, place or export `adapted_model.pkl` next to `app.py`.
+If you want the root Streamlit app to use the final adapted model directly, copy or export `demo/adapted_model.pkl` to the project root as `adapted_model.pkl`, beside `app.py`.
 
 ## Deployment notes
 
@@ -351,12 +351,12 @@ Core assumptions:
 
 ## Acknowledgment of current practical issue
 
-One practical detail to keep in mind is that the app and the exported demo model should live in consistent locations. At the moment, we still have both:
+One practical detail to keep in mind is that the app and the exported adapted model should live in consistent locations. At the moment, we still have both:
 
 - a root-level baseline model used by `app.py`
 - a `demo/` copy of the adapted model
 
-This is acceptable for archival purposes, but for a cleaner final deployment we should standardize the model path so the app always loads the intended artifact.
+This is acceptable for archival purposes, but for a cleaner final deployment we should standardize the model path so the app always loads the intended final adapted artifact.
 
 ## License
 
@@ -371,5 +371,6 @@ Important note:
 ## Citation
 
 If this repository or its code is reused, the project should be credited to Technical Team 1. Citation metadata is provided in [CITATION.cff](CITATION.cff).
+
 
 
