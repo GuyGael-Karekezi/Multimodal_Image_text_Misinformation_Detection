@@ -107,7 +107,7 @@ MBD_Multimodal_Misinformation/
 ### African-context data
 
 - [data/african_context/african_context_raw.csv](data/african_context/african_context_raw.csv): current working African-context dataset
-- [data/african_validation_images](data/african_validation_images): local image files used by the African dataset
+- [African validation images (Google Drive)](https://drive.google.com/drive/folders/1wejHsr8ai5TO6URrMH0vRylmMuqvLmLh?usp=sharing): public folder containing the validation image assets used by the African dataset
 
 ## Data description
 
@@ -371,6 +371,7 @@ Important note:
 ## Citation
 
 If this repository or its code is reused, the project should be credited to Technical Team 1. Citation metadata is provided in [CITATION.cff](CITATION.cff).
+
 
 
 
